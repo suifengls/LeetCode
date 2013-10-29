@@ -37,3 +37,8 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 
        Check the haystack step by step, if not equal to needle, move to next start point of haystack.
 
+7. Pow(x, n)
+
+        n could be smaller than 0.
+
+	Resursive call: pow(x, n) = pow(x, n/2) * pow(x, n/2) *[x] (if n is odd)
