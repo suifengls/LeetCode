@@ -21,4 +21,19 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 
        Three pointers, one move from 0 to n-1, other two are the same as in Two Sum
 
-       Check duplicate
+       Check duplicates
+
+4. Valid Paratheses
+
+       Stack is not empty, all paratheses are left paratheses.
+
+5. Merge Two Sorted Lists
+
+       Use a dummy node, link the next to the new Listnode with the smaller value, then return dummy->next.
+
+6. Implement strStr()
+
+       Use char* directly to compare.
+
+       Check the haystack step by step, if not equal to needle, move to next start point of haystack.
+
