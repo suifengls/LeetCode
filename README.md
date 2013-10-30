@@ -72,3 +72,24 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 	Use FINITE AUTOMATA: How to construct the state transition graph correctly?
 
 	Reference: http://discuss.leetcode.com/questions/241/valid-number/768
+
+12. Clibming Stairs
+
+    	You have two choices, 1 step or 2 steps, dp[i] = dp[i-1] + dp[i-2].
+
+13. Set Matrix Zeroes
+
+    	Save row and column index firstly, then set 0s according to the index we saved.
+
+14. Merge Sorted Array
+
+    	Backward to stoer the larger number from A and B. Only move the rest numbers in B to A if B has numbers left after A has been moved.
+
+15. Valid Palindrome
+
+    	isalnum(c): Checks whether c is either a decimal digit or an uppercase or lowercase letter.
+
+16. Word Ladder
+
+    	Graph BFS problem. Use a queue and a visited array for BFS without constructing the graph.
+
