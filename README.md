@@ -42,3 +42,27 @@ Solve problems in LeetCode http://oj.leetcode.com/.
         n could be smaller than 0.
 
 	Resursive call: pow(x, n) = pow(x, n/2) * pow(x, n/2) *[x] (if n is odd)
+
+8. Merge Interval
+
+   	Sorting by start point, merge by max(end point) if two intervals intersection (previous.end <= current.start).
+
+9. Linked List Cycle
+
+   	Two pointers, one faster, one slow, then meet together or meet NULL.
+
+10. Insert Interval
+
+    	Usefull of vector insert() and erase().
+
+	Insert: inserting new elements before the element at the specified position.	
+
+	Erase return value: An iterator pointing to the new location of the element that followed the last element erased by the function call. 
+
+11. Valid Number
+
+    	Too many different cases to handle.
+
+	Use FINITE AUTOMATA: How to construct the state transition graph correctly?
+
+	Reference: http://discuss.leetcode.com/questions/241/valid-number/768
