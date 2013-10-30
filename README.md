@@ -63,6 +63,12 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 
     	Too many different cases to handle.
 
+	1. 
+	   
+	strlen():  A C string is as long as the number of characters between the beginning of the string and the terminating null character (without including the terminating null character itself).
+
+	2.
+
 	Use FINITE AUTOMATA: How to construct the state transition graph correctly?
 
 	Reference: http://discuss.leetcode.com/questions/241/valid-number/768
