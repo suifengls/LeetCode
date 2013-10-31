@@ -109,3 +109,31 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 
 	Convert from low to high.
 
+20. Linked List Cycle II
+
+    	Similar to Linked List Cycle. When two pointers meet, move one back to head, then both move step by step, until they two meet again at the beginning node.
+
+21. Roman to Integer
+
+     	When a smaller char is located before a larger char, substract the vale the smaller char points to.
+
+22. Generate Parentheses
+
+    	Make sure number of left parentheses is not smaller than number of right parentheses.
+
+23. Merge k Sorted Lists
+
+    	Call the Merge Tow Sorted Lists k times, you are done!
+
+	Use min-heap to find the min in O(logk), total time complexity O(nlogk).
+    	Reference: https://github.com/AnnieKim/LeetCode/blob/master/MergekSortedLists.h
+
+24. Swap Nodes in Pairs
+
+    	Use a dummy head, then swap every pairs two by two. 
+
+	Remember to move previous node two steps forward after swapping a pair.
+
+25. Remove Element
+
+    	Only copy the elements that do not equal to given value in order.
