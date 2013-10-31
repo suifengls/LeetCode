@@ -85,11 +85,27 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 
     	Backward to stoer the larger number from A and B. Only move the rest numbers in B to A if B has numbers left after A has been moved.
 
-15. Valid Palindrome
+15. Validate Binary Search Tree
+
+    	Recursive Problem. Left nodes should locate in [min, parent->val], right nodes should locate in [parent->val, max].
+
+16. Valid Palindrome
 
     	isalnum(c): Checks whether c is either a decimal digit or an uppercase or lowercase letter.
 
-16. Word Ladder
+17. Word Ladder
 
     	Graph BFS problem. Use a queue and a visited array for BFS without constructing the graph.
+
+18. Add Two Numbers
+
+    	Remember to initialize head as NULL, or dummy head would be another choice.
+
+	Stop condition: while(l1 || l2 || carry)
+
+19. Integer to Roman
+
+    	Left(-) and right(+) for 5s and 10s.
+
+	Convert from low to high.
 
