@@ -15,7 +15,7 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 
        Use long long to make sure the string can be converted, then check whether it exceeds INT_MAX/INT_MIN.
 
-3. 3 Sum
+**3. 3 Sum**
 
        Size of vector >= 3
 
@@ -31,7 +31,7 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 
        Use a dummy node, link the next to the new Listnode with the smaller value, then return dummy->next.
 
-6. Implement strStr()
+**6. Implement strStr()**
 
        Use char* directly to compare.
 
@@ -51,7 +51,7 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 
    	Two pointers, one faster, one slow, then meet together or meet NULL.
 
-10. Insert Interval
+**10. Insert Interval**
 
     	Usefull of vector insert() and erase().
 
@@ -59,7 +59,7 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 
 	Erase return value: An iterator pointing to the new location of the element that followed the last element erased by the function call. 
 
-11. Valid Number
+**11. Valid Number**
 
     	Too many different cases to handle.
 
@@ -89,11 +89,11 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 
     	Recursive Problem. Left nodes should locate in [min, parent->val], right nodes should locate in [parent->val, max].
 
-16. Valid Palindrome
+**16. Valid Palindrome**
 
     	isalnum(c): Checks whether c is either a decimal digit or an uppercase or lowercase letter.
 
-17. Word Ladder
+**17. Word Ladder**
 
     	Graph BFS problem. Use a queue and a visited array for BFS without constructing the graph.
 
@@ -103,7 +103,7 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 
 	Stop condition: while(l1 || l2 || carry)
 
-19. Integer to Roman
+**19. Integer to Roman**
 
     	Left(-) and right(+) for 5s and 10s.
 
@@ -121,7 +121,7 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 
     	Make sure number of left parentheses is not smaller than number of right parentheses.
 
-23. Merge k Sorted Lists
+**23. Merge k Sorted Lists**
 
     	Call the Merge Tow Sorted Lists k times, you are done!
 
@@ -150,10 +150,30 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 
     	Similar to Add Two Numbers. Use string instead of linked list.
 
-29. Sqrt(x)
+**29. Sqrt(x)**
 
 	Binary search method. Be careful about overflow, using long long.
 	
 30. Combinations
 
 	DFS. In position k, iterative through k+1 to n.
+
+31. Subsets
+
+	DFS. Similar to Combinations, but stores all subsets into result.
+
+**32. Word Search**
+
+    	DFS. If current char match the word, traversal its four directions. Use a visited[][] to mark visited or not.
+
+	Put the check into a function for a better structure of code.
+
+**33. Decode Ways**
+
+      	Dynamic problem. Similar to Climbing Stairs, with some limitations.
+
+	dp[i] = dp[i-1] + dp[i-2], add dp[i-2] if two char can be put together. 
+34. Binary Tree Level Order Traversal
+
+    	Use a queue to store the children nodes of current level.
+
