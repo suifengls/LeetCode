@@ -177,3 +177,11 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 
     	Use a queue to store the children nodes of current level.
 
+35. Sum Root to Leave Numbers
+
+    	Recursive call to sum left subtree and right subtree.
+
+36. Palindrome Partitioning
+
+    	DFS. If current substring is a palindrome, recursive calls.
+
