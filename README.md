@@ -137,3 +137,23 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 25. Remove Element
 
     	Only copy the elements that do not equal to given value in order.
+
+26. Permutation
+
+	Recursive problem: fix first k-1 numbers, swap number k with following numbers one by one, recursive call.
+
+27. Anagrams
+
+	Sort every string, use this string as key, value is the index of the strings that have the same key after sorting.
+
+28. Add Binary
+
+    	Similar to Add Two Numbers. Use string instead of linked list.
+
+29. Sqrt(x)
+
+	Binary search method. Be careful about overflow, using long long.
+	
+30. Combinations
+
+	DFS. In position k, iterative through k+1 to n.
