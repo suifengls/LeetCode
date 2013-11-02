@@ -185,3 +185,41 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 
     	DFS. If current substring is a palindrome, recursive calls.
 
+37. Median of Two Sorted Arrays
+
+        1. Make sure A is always the shorter one, easy to check empty array.
+
+	2. If one array is empty, return the kth element in B.
+
+	3. Position in shorter array : min(k/2, m); longer array : k - min(k/2, m)
+
+38. Reverse Integer
+
+    	mod operation works for negative.
+
+	Use long long type to handle numbers out of INT_MAX or INT_MIN.
+
+39. Regular Expression Matching
+
+    	If next char in p is '*', and *s == *p, skip all the same char in s, return isMatch(s, p+2).
+
+	If next char in p is not '*', compare *s and *p, return isMatch(s+1, p+1).
+
+	Reference: http://leetcode.com/2011/09/regular-expression-matching.html
+
+40. Letter Combinations of a Phone Number
+
+    	DFS. Choose a letter in each position every time until all digits are mapped to letters.
+
+
+41. Remove Nth Node From End of List
+
+    	Two pointers with dummy head.
+
+	Be careful about n or n-1 to the end.
+
+42. Remove Duplicates from Sorted Array
+
+    	Two pointers, if A[i] is not the same as prev, A[k++] = A[i] and prev = A[i].
+
+	Return length k, not (k+1).
