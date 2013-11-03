@@ -198,3 +198,17 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 
     	Two pointers, if A[i] is not the same as prev, A[k++] = A[i] and prev = A[i].
 		Return length k, not (k+1).
+
+43. Divide Two Integers
+
+    	   Use long long to avoid overflow.
+	   Cannot use * and / : subtract b << i, result += 1 << i, until a <= b.
+
+44. Search in Rotated Sorted Array
+
+    	   At least one half is still increasing order.
+
+45. Search for a Range
+
+    	   Be careful of index bound!
+    	   L points to the index of first target, R points to the next index of last target. 
