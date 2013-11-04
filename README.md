@@ -212,3 +212,18 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 
     	   Be careful of index bound!
     	   L points to the index of first target, R points to the next index of last target. 
+
+46. Combination Sum
+
+    		DFS. The start index is the same as current due to the repeated element.
+
+47. Multiple Strings
+
+    	     Reverse two strings, multiple one by one.
+	     OR do as what we do to multiple two numbers. 
+	     Be careful about index of the result. 
+
+48. Reorder List
+    
+		Reverse the last half of the list, then insert each node to thr first half one by one.
+
