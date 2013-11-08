@@ -227,3 +227,8 @@ Solve problems in LeetCode http://oj.leetcode.com/.
     
 		Reverse the last half of the list, then insert each node to thr first half one by one.
 
+49. Binary Tree Preorder Traversal
+
+    	   	1. Recursive call, visit the root first.
+
+		2. Iterative method, use a stack to store right child, then left childe in order.
