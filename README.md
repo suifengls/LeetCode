@@ -201,8 +201,8 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 
 43. Divide Two Integers
 
-    	   Use long long to avoid overflow.
-	   Cannot use * and / : subtract b << i, result += 1 << i, until a <= b.
+    	  Use long long to avoid overflow.
+	      Cannot use * and / : subtract b << i, result += 1 << i, until a <= b.
 
 44. Search in Rotated Sorted Array
 
@@ -220,24 +220,24 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 47. Multiple Strings
 
            Reverse two strings, multiple one by one.
-	   OR do as what we do to multiple two numbers. 
-	   Be careful about index of the result. 
+	   	   OR do as what we do to multiple two numbers. 
+	       Be careful about index of the result. 
 
 48. Reorder List
     
-	   Reverse the last half of the list, then insert each node to thr first half one by one.
+	      Reverse the last half of the list, then insert each node to the first half one by one.
 
 49. Binary Tree Preorder Traversal
 
- 	   1. Recursive call, visit the root first.
-	   2. Iterative method, use a stack to store right child, then left childe in order.
+ 	     1. Recursive call, visit the root first.
+	     2. Iterative method, use a stack to store right child, then left child in order.
 
 50. Binary Tree Postorder Traversal
 
-    	   1. Recursive call, visit the root last.
-	   2. Iterative method, use a stack.
-	   If current node's right/left children is the previous one being visited, visit this node, then pop it;
-    else push right node, then push left node.
+        1. Recursive call, visit the root last.
+	    2. Iterative method, use a stack.
+	    If current node's right/left children is the previous one being visited, visit this node, then pop it;
+        else push right node, then push left node.
 
 51. LRU Cache
 
