@@ -215,20 +215,30 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 
 46. Combination Sum
 
-    		DFS. The start index is the same as current due to the repeated element.
+           DFS. The start index is the same as current due to the repeated element.
 
 47. Multiple Strings
 
-    	     Reverse two strings, multiple one by one.
-	     OR do as what we do to multiple two numbers. 
-	     Be careful about index of the result. 
+           Reverse two strings, multiple one by one.
+	   OR do as what we do to multiple two numbers. 
+	   Be careful about index of the result. 
 
 48. Reorder List
     
-		Reverse the last half of the list, then insert each node to thr first half one by one.
+	   Reverse the last half of the list, then insert each node to thr first half one by one.
 
 49. Binary Tree Preorder Traversal
 
-    	   	1. Recursive call, visit the root first.
+ 	   1. Recursive call, visit the root first.
+	   2. Iterative method, use a stack to store right child, then left childe in order.
 
-		2. Iterative method, use a stack to store right child, then left childe in order.
+50. Binary Tree Postorder Traversal
+
+    	   1. Recursive call, visit the root last.
+	   2. Iterative method, use a stack.
+	   If current node's right/left children is the previous one being visited, visit this node, then pop it;
+    else push right node, then push left node.
+
+51. LRU Cache
+
+    	DoubleLinkedList (remove a node without traversal the list) + Hashmap (find a node in O(1))
