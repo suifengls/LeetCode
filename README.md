@@ -242,3 +242,37 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 51. LRU Cache
 
     	DoubleLinkedList (remove a node without traversal the list) + Hashmap (find a node in O(1))
+
+52. N-Queens
+
+	DFS + recursive.
+	Add a queen in each row. If the new added queen has not confilt with all the previous added queens, recursive call next row, else stop and try another column.
+
+53. N-Queens II
+
+    	Same as N-Queens, but only count the number of solutions.
+
+54. Maximum Subarray
+
+    	DP. sum[i] stores the maximum sum ends at index i.
+
+55. Unique Path
+
+    	DP. path[i][j] = path[i-1][j] + path[i][j-1]. 
+	Be careful about the index, i = 1~m-1, j = 1~n-1.
+
+56. Unique Path II
+    
+	DP. Same as Unqiue Path, but set path[i][j] = 0 if there is an obstacle here.
+	Be careful about the initial consitions.
+
+57. Minimum Path Sum
+
+    	DP. Similar as Unique Path I/II problems.
+	pathsum[i][j] = min(pathsum[i-1][j], pathsum[i][j-1]) + grid[i][j];
+
+58. Edit Distance
+
+    	DP. 2-D matrix stores min-distance from word1[0, i] to word2[0, j].
+	If word1[i] = word2[j],	distance[i][j] = distance[i-1][j-1];
+	Else distance[i][j] = min(distanct[i-1][j], distance[i][j-1], distance[i][j]) + 1
