@@ -285,4 +285,18 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 
     	 Similar to binary search, but when A[left] == A[mid] or A[mid] == A[right] (may have duplicate), move mid to next unduplcate number.
 
- 
+61. Remove Duplicates from Sorted List II
+
+     	 Two pointers, p points to the previous node of non-duplicate node, q move to next non-duplicate node, then p->next = q.
+
+62. Remove Duplicates from Sorted List
+
+    	 Two pointers, p points to current node, q moves to find the next distinguish node of p, then p->next = q.
+
+63. Partition List
+
+    	  Use 4 pointers to keep track of the head and tail of smaller list and larger list.
+
+64. RestoreUPAddresses
+
+	  DFS. Successful IP : ip.size() == s.size()+3 & dot == 3
