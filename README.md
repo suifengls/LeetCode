@@ -276,3 +276,13 @@ Solve problems in LeetCode http://oj.leetcode.com/.
     	DP. 2-D matrix stores min-distance from word1[0, i] to word2[0, j].
 	If word1[i] = word2[j],	distance[i][j] = distance[i-1][j-1];
 	Else distance[i][j] = min(distanct[i-1][j], distance[i][j-1], distance[i][j]) + 1
+
+59. Search a 2D Matrix
+
+    	 Binary Search, seeing this matrix as a long array.
+
+60. Search in Rotated Sorted Array II
+
+    	 Similar to binary search, but when A[left] == A[mid] or A[mid] == A[right] (may have duplicate), move mid to next unduplcate number.
+
+ 
