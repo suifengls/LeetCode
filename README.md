@@ -324,3 +324,27 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 
     	  Recursive call. Middle element is current root.
 
+70. Convert Sorted List to Binary Search Tree
+
+    	  Recursive call. Helper(ListNode *&head, ...) beacuse we need to move head to its next in each recursive call.
+	  After left = helper(head, ...), head now points to middle node, which is the current root.
+
+71. Path Sum
+
+    	 Recursive call. sum -= root->val. If at one leaf, sum == 0. return true.
+
+72. Flatten Binary Tree to Linked List
+
+    	 Flatten right subtree, then left subtree recursively. Then attach right subtree to the end of the left subtree.
+
+73. Longest Consecutive Sequence
+
+    	 Use hashset to store each element. When iterate one element, find the increasing & decreasing order, and erase these numbers.
+
+74. Surrounded Regions
+
+    	 DFS or BFS. Check boundary.
+
+75. Palindrome Partitioning II
+
+    	 DP. Use a 2D array ispalin[i][j] (true, if string(i to j) is parlinfrom). cut[i] = min(cut[i], cut[j+1]+1).
