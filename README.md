@@ -300,3 +300,27 @@ Solve problems in LeetCode http://oj.leetcode.com/.
 64. RestoreUPAddresses
 
 	  DFS. Successful IP : ip.size() == s.size()+3 & dot == 3
+
+65. Binary Tree Inorder Traversal
+
+    	  1. Iterative: push node = node->left to stack until node == NULL, pop from stack, save the vale, then node = stank.top()->right.
+	  Stop conditions: while(!stack.empty() || node)
+
+	  2. Recursive call, call visit(left), save root->val, call visit(right).
+
+66. Binary Tree Zigzag Level Order Traversal
+
+    	  Same as Level Order Traversal, reverse even levels before push to the result.
+
+67. Construct Binary Tree from Preorder and Inorder Traversal
+
+    	  Recursive call. First value in preorder list is current root, find the same value in inorder list, left part is leftsubtree, right part is right subtree.
+
+68. Construct Binary Tree from Postorder and Inorder Traversal
+
+    	  Recursive call. Last value in postorder list is current root, find the same value in inorder list, left part is leftsubtree, right part is right subtree. 
+
+69. Convert Sorted Array to Binary Search Tree
+
+    	  Recursive call. Middle element is current root.
+
